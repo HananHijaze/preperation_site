@@ -1,90 +1,760 @@
-<!doctype html>
-<html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>חומר הכנה | אמינות מידע בעידן הדיגיטלי</title>
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>מידע בעידן הדיגיטלי | אתר הכנה</title>
+
 <style>
-:root{--navy:#172b50;--blue:#3157a4;--teal:#168b83;--bg:#f4f7fb;--line:#e1e8f0}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#1b2940;font:17px/1.8 Arial,sans-serif}
-header{background:linear-gradient(120deg,#172b50,#3157a4 70%,#168b83);color:white;padding:48px 20px}
-.wrap{max-width:940px;margin:auto;padding:0 18px}h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.2;margin:10px 0}
-header p{max-width:720px;font-size:1.1rem}.pills{display:flex;gap:9px;flex-wrap:wrap}.pill{border:1px solid #ffffff70;border-radius:30px;padding:4px 12px}
-nav{position:sticky;top:0;background:#ffffffed;border-bottom:1px solid var(--line);z-index:2}nav .wrap{display:flex;gap:5px;overflow:auto;padding-top:8px;padding-bottom:8px}nav a{white-space:nowrap;padding:7px 10px;color:#3157a4;text-decoration:none;border-radius:8px}nav a:hover{background:#eaf0ff}
-main{padding:28px 0 60px}section{margin:28px 0;scroll-margin-top:70px}.intro,.callout{padding:15px 18px;border-radius:12px;background:#eaf6f4;border-right:4px solid var(--teal);margin-bottom:18px}
-.callout{background:#fff8e8;border-color:#d6a43b}.head{display:flex;align-items:center;gap:12px;margin-bottom:12px}.num{background:var(--blue);color:white;border-radius:10px;width:36px;height:36px;display:grid;place-items:center;font-weight:bold}
-h2{margin:0;font-size:1.55rem}h3{margin:0 0 7px;font-size:1.12rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:13px}
-.card{background:white;border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:0 4px 15px #14274608}.card p{margin:6px 0}.tag{font-size:.82rem;color:#3157a4;background:#eaf0ff;border-radius:6px;padding:2px 8px}
-.case{border-right:4px solid var(--teal);margin-top:13px}.small{font-size:.9rem;color:#64748b}table{border-collapse:collapse;width:100%;background:white;border-radius:12px;overflow:hidden}td,th{text-align:right;padding:11px;border-bottom:1px solid var(--line)}th{background:#eaf0ff}
-.question{padding:13px 0;border-bottom:1px solid var(--line)}label{display:block;cursor:pointer;margin:5px 0}input{margin-left:7px}button{background:var(--blue);color:white;border:0;border-radius:9px;padding:11px 18px;font-size:1rem;cursor:pointer;margin-top:12px}#result{margin-top:14px;font-weight:bold}
-a{color:#3157a4}footer{background:#172b50;color:white;padding:25px 0}footer .small{color:#cbd5e1}
-</style></head><body>
-<header><div class="wrap"><div>חומר הכנה לשיעור · מערכות מידע</div><h1>טכנולוגיות מידע, קבלת החלטות ואמינות המידע</h1>
-<p>כיצד מערכות מידע עוזרות לנו לקבל החלטות טובות יותר — ומתי הן עלולות להציג תמונה חלקית, מוטה או מטעה?</p>
-<div class="pills"><span class="pill">כ־30 דקות</span><span class="pill">קריאה ומקרי בוחן</span><span class="pill">שאלון בסיום</span></div></div></header>
-<nav><div class="wrap"><a href="#benefits">יתרונות IT</a><a href="#concepts">מושגי יסוד</a><a href="#cases">מקרי בוחן</a><a href="#mechanisms">מנגנונים</a><a href="#solutions">אחריות ופתרונות</a><a href="#quiz">שאלון</a><a href="#sources">מקורות</a></div></nav>
-<main class="wrap">
-<div class="intro"><b>מטרת ההכנה:</b> להכיר את המושגים המרכזיים, להבין את המתח בין מהירות ונוחות לבין אמינות, ולהגיע מוכנים לדיון בשאלה מי אחראי לצמצום הסיכונים. חשוב להבין מה הנתונים מודדים ומה אפשר ללמוד מהם — לא רק לזכור מספרים.</div>
+:root {
+  --navy: #172554;
+  --blue: #3156a3;
+  --light: #eef3ff;
+  --purple: #7656b8;
+  --text: #26334d;
+  --muted: #68758c;
+  --white: #ffffff;
+  --green: #21866b;
+}
 
-<section id="benefits"><div class="head"><span class="num">1</span><h2>היתרונות של טכנולוגיות מידע בקבלת החלטות</h2></div>
-<p>מערכות מידע מאפשרות לאסוף, לעבד ולהציג נתונים במהירות ובקנה מידה שקשה להשיג באופן ידני. הן עשויות לתמוך בהחלטות בתחומים רבים:</p>
-<div class="grid">
-<div class="card"><span class="tag">תגובה מהירה</span><h3>נתונים בזמן אמת</h3><p>עדכוני תנועה חיים מסייעים לבחור מסלול ולהימנע מעומסים.</p></div>
-<div class="card"><span class="tag">גילוי דפוסים</span><h3>ניתוח כמויות מידע</h3><p>ניתוח נתונים עשוי לחשוף קשרים ומגמות שקשה לזהות במקרים בודדים.</p></div>
-<div class="card"><span class="tag">התאמה אישית</span><h3>מידע לפי הקשר המשתמש</h3><p>מערכת יכולה להתאים את המידע המוצג לצרכים ולהעדפות שונות.</p></div>
-<div class="card"><span class="tag">תמונה רחבה</span><h3>שילוב מקורות</h3><p>גישה למקורות רבים עשויה להרחיב את נקודת המבט, בתנאי שהמקורות איכותיים ומגוונים.</p></div></div>
-<div class="callout"><b>שאלת מפתח:</b> האם יותר נתונים ומהירות גבוהה יותר מבטיחים החלטה טובה יותר? לא בהכרח. צריך לבדוק מה הנתונים מודדים, מה חסר בהם ועד כמה אפשר לסמוך עליהם.</div></section>
+* { box-sizing: border-box; }
 
-<section id="concepts"><div class="head"><span class="num">2</span><h2>מושגי יסוד</h2></div><div class="grid">
-<div class="card"><h3>עומס מידע (Information Overload)</h3><p>מצב שבו כמות המידע גדולה מיכולת האדם לעבד, לסנן ולבדוק אותו. קשה להבחין בין מידע חשוב לשולי ובין נכון לשגוי, ולכן אנשים עלולים להסתמך על קיצורי דרך.</p></div>
-<div class="card"><h3>חדשות כוזבות (Fake News)</h3><p>מידע מפוברק שמחקה צורה של כתבה חדשותית, אך אינו עובר תהליכי עריכה ואימות מקובלים. הוא עשוי להיות שקר מוחלט או לשלב עובדות עם הקשר מעוות.</p></div>
-<div class="card"><h3>תא תהודה (Echo Chamber)</h3><p>סביבה שבה אדם נחשף בעיקר לדעות ולמידע שמתאימים למה שהוא כבר מאמין בו. כך עלולה להתחזק התחושה שכולם חושבים כמוהו.</p></div>
-<div class="card"><h3>הטיה אלגוריתמית (Algorithmic Bias)</h3><p>דפוס שיטתי שבו מערכת מפיקה תוצאות שמעדיפות או מקפחות קבוצות מסוימות. במודלים גנרטיביים בוחנים דפוסים חוזרים בתוצרים רבים.</p></div></div>
-<p class="small">הבחנה: misinformation הוא מידע שגוי או מטעה, גם ללא כוונת הטעיה. disinformation הוא מידע כוזב שמופץ בכוונה להטעות. אלה מונחים קרובים אך אינם זהים.</p></section>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fc;
+  color: var(--text);
+  line-height: 1.8;
+}
 
-<section id="cases"><div class="head"><span class="num">3</span><h2>מקרי בוחן: כשהנתונים אינם מספרים את כל הסיפור</h2></div>
-<div class="card case"><h3>Google Flu Trends — נתונים רבים, החלטות שגויות</h3><p>Google Flu Trends ניסתה להעריך את היקף השפעת באמצעות דפוסי חיפוש בגוגל. ההנחה הייתה שאנשים שחווים תסמינים יחפשו מידע עליהם, ולכן החיפושים יוכלו לשמש מדד מהיר להתפשטות המחלה.</p><p>אולם המערכת העריכה יתר על המידה את היקף השפעת בתקופות מסוימות, ובמקרה אחר לא זיהתה כראוי התפרצות. היא מדדה חיפושים — לא מחלה באופן ישיר.</p><div class="callout"><b>הלקח:</b> נתון אינו זהה לתופעה שאותה רוצים למדוד. חשוב להבין את המדד, להשוות למקורות בלתי תלויים ולבדוק את המודל לאורך זמן.</div></div>
-<div class="card case"><h3>התפשטות מידע אמיתי ושקרי ברשת</h3><p>מחקרם של Vosoughi, Roy ו־Aral בחן התפשטות של חדשות אמיתיות ושקריות בטוויטר. לפי ממצאיו, חדשות שקריות נטו להתפשט רחוק, מהר ועמוק יותר. החוקרים הציעו שחידוש המידע עשוי להסביר חלק מההבדל.</p><p>המחקר מצא שבוטים האיצו הפצה של מידע אמיתי ושקרי כאחד; התנהגות אנושית תרמה להבדלים בהתפשטות.</p><div class="callout"><b>הלקח:</b> הפצה מהירה או מספר שיתופים אינם הוכחה לאמינות.</div></div>
-<div class="card case"><h3>הטיות בתמונות שנוצרות באמצעות AI</h3><p>מודלים גנרטיביים לומדים מדוגמאות רבות, לרבות תכנים מהאינטרנט. אם נתוני האימון משקפים ייצוג לא מאוזן או סטריאוטיפים, התוצרים עלולים לשחזר אותם ואף להעצים אותם.</p><p>תמונות במערכות חינוך, גיוס, פרסום ומידע ציבורי עשויות להשפיע על האופן שבו אנשים תופסים מקצועות, קבוצות ותפקידים חברתיים.</p><div class="callout"><b>הלקח:</b> יש לבדוק דפוסים במגוון תוצרים ולבחון מי מיוצג ומי נעדר.</div></div></section>
+header {
+  background: linear-gradient(135deg, #172554, #405ca7);
+  color: white;
+  padding: 55px 20px 45px;
+  text-align: center;
+}
 
-<section id="mechanisms"><div class="head"><span class="num">4</span><h2>כיצד טכנולוגיית מידע עלולה להגביר את הבעיה?</h2></div><div class="grid">
-<div class="card"><h3>מודל עסקי ותשומת לב</h3><p>פלטפורמות רבות מתחרות על זמן המשתמש ומעורבותו. תוכן שמעורר תגובה חזקה עשוי לקבל חשיפה רבה, גם אם אמינותו לא נבדקה.</p></div>
-<div class="card"><h3>פרסונליזציה</h3><p>התאמת תוכן להעדפות המשתמש נוחה, אך עלולה לצמצם חשיפה לנקודות מבט אחרות ולחזק תאי תהודה.</p></div>
-<div class="card"><h3>חוסר שקיפות</h3><p>כאשר אופן הדירוג וההמלצה אינו ברור, קשה להבין מדוע תוכן מסוים הוצג ומה לא הוצג.</p></div>
-<div class="card"><h3>עלות נמוכה וחידוש</h3><p>קל יחסית ליצור ולהפיץ תוכן דיגיטלי. מידע חדש או רגשי עשוי לעודד שיתוף לפני בדיקה.</p></div>
-<div class="card"><h3>כלי AI</h3><p>כלים גנרטיביים מאפשרים ליצור טקסט, תמונות, קול ווידאו בקנה מידה גדול, ומקשים לעיתים לזהות תוכן סינתטי או מטעה.</p></div></div>
-<div class="callout"><b>חשוב לדייק:</b> אלה מנגנונים שעלולים לתרום לבעיה, ולא הוכחה שכל פלטפורמה או כל אלגוריתם בהכרח מפיצים מידע שקרי.</div></section>
+header h1 {
+  font-size: clamp(28px, 5vw, 43px);
+  margin: 0 0 12px;
+}
 
-<section id="solutions"><div class="head"><span class="num">5</span><h2>מי אחראי — ומה אפשר לעשות?</h2></div>
-<table><thead><tr><th>גורם</th><th>אחריות אפשרית</th><th>צעדים לצמצום הסיכון</th></tr></thead><tbody>
-<tr><td>חברות טכנולוגיה</td><td>תכנון מערכות, דירוג והפצת תוכן</td><td>שקיפות, בדיקות הטיה, דיווח ותיקון</td></tr>
-<tr><td>ממשלות ורגולטורים</td><td>הגנה על הציבור וקביעת כללים</td><td>כללי גילוי, פיקוח ואכיפה</td></tr>
-<tr><td>כלי תקשורת</td><td>אימות מידע לפני פרסום</td><td>בדיקת עובדות, הצגת מקורות ותיקון טעויות</td></tr>
-<tr><td>משתמשים</td><td>צריכה ושיתוף של מידע</td><td>בדיקת מקור, הצלבת מקורות והימנעות משיתוף מיידי</td></tr>
-<tr><td>אנשי מערכות מידע</td><td>איכות המערכת והשלכותיה</td><td>בדיקת נתונים והטיות, מדדי אמינות, תיעוד ואפשרות לערער</td></tr>
-</tbody></table>
-<h3 style="margin-top:18px">תפקידם של אנשי מערכות מידע</h3><ul>
-<li><b>תכנון:</b> להציג מידע באופן ברור ומאוזן.</li><li><b>בדיקות:</b> לבדוק איכות נתונים, הטיות וסיכונים לפני השקה ולאחריה.</li>
-<li><b>מדדי הצלחה:</b> למדוד גם דיוק, אמינות והוגנות — ולא רק מעורבות.</li><li><b>שקיפות ואחריות:</b> להסביר כיצד מתקבלות החלטות ולאפשר בירור וערעור.</li>
-<li><b>הגברת מודעות:</b> לסייע למשתמשים לזהות מידע חשוד, לבדוק מקורות, להצליב מידע ולהבין שהמלצה אלגוריתמית אינה אמת מוחלטת.</li></ul></section>
+header p {
+  max-width: 720px;
+  margin: auto;
+  color: #e2e8ff;
+  font-size: 17px;
+}
 
-<section id="quiz"><div class="head"><span class="num">6</span><h2>בדיקת הבנה</h2></div><p>ענו על חמש השאלות. בסיום יוצגו הציון והסברים.</p><div class="card"><form id="quizForm">
-<div class="question"><b>1. מהו עומס מידע?</b><label><input type="radio" name="q1" value="a"> כמות מידע גדולה מיכולת האדם לעבד ולבדוק</label><label><input type="radio" name="q1" value="b"> מצב שבו אין אינטרנט</label><label><input type="radio" name="q1" value="c"> מצב שבו כל המידע שגוי</label></div>
-<div class="question"><b>2. מהו תא תהודה?</b><label><input type="radio" name="q2" value="a"> מערכת שמוחקת מידע ישן</label><label><input type="radio" name="q2" value="b"> סביבה שבה נחשפים בעיקר למידע שתואם אמונות קיימות</label><label><input type="radio" name="q2" value="c"> מאגר נתונים רפואי</label></div>
-<div class="question"><b>3. מה מלמד מקרה Google Flu Trends?</b><label><input type="radio" name="q3" value="a"> נתוני חיפוש מודדים מחלה ישירות</label><label><input type="radio" name="q3" value="b"> נתונים רבים תמיד מובילים להחלטה נכונה</label><label><input type="radio" name="q3" value="c"> מדד עקיף עלול לא לשקף במדויק את התופעה</label></div>
-<div class="question"><b>4. מה נכון לגבי המחקר על התפשטות חדשות שקריות?</b><label><input type="radio" name="q4" value="a"> בוטים האיצו מידע שקרי בלבד</label><label><input type="radio" name="q4" value="b"> בוטים האיצו מידע אמיתי ושקרי, והתנהגות אנושית תרמה להבדלים</label><label><input type="radio" name="q4" value="c"> מידע אמיתי אינו מתפשט ברשת</label></div>
-<div class="question"><b>5. איזה מדד כדאי לשלב לצד מעורבות משתמשים?</b><label><input type="radio" name="q5" value="a"> אמינות, דיוק והוגנות</label><label><input type="radio" name="q5" value="b"> מספר הצבעים בממשק</label><label><input type="radio" name="q5" value="c"> מספר האנימציות</label></div>
-<button type="button" onclick="grade()">בדיקת תשובות</button><div id="result" aria-live="polite"></div></form></div></section>
+.container {
+  max-width: 1050px;
+  margin: auto;
+  padding: 25px 18px 60px;
+}
 
-<section><div class="head"><span class="num">7</span><h2>לקראת הדיון בכיתה</h2></div><div class="card"><ul>
-<li>האם מערכת יכולה להיות מוטה, או שההטיה נובעת רק מהאנשים שפיתחו אותה?</li><li>האם פלטפורמה צריכה להיות אחראית לתוכן שאלגוריתם ההמלצות שלה מקדם?</li>
-<li>כיצד אפשר לאזן בין התאמה אישית לבין חשיפה למגוון דעות?</li><li>מה חשוב יותר במערכת לקבלת החלטות: מהירות, דיוק, שקיפות או הוגנות?</li>
-<li>מה הייתם משנים במערכת שאתם מתכננים כדי לצמצם הפצת מידע מטעה?</li></ul></div></section>
+.progress-box {
+  background: white;
+  border-radius: 15px;
+  padding: 18px 22px;
+  margin-top: -25px;
+  position: relative;
+  box-shadow: 0 5px 20px #17255412;
+}
 
-<section id="sources"><div class="head"><span class="num">8</span><h2>מקורות להעמקה</h2></div><div class="card"><ul>
-<li>Lazer et al. (2018), <i>The science of fake news</i>, Science. <a href="https://doi.org/10.1126/science.aao2998" target="_blank" rel="noopener">מאמר</a>.</li>
-<li>Vosoughi, Roy &amp; Aral (2018), <i>The spread of true and false news online</i>, Science. <a href="https://doi.org/10.1126/science.aap9559" target="_blank" rel="noopener">מאמר</a>.</li>
-<li>Lazer, Kennedy, King &amp; Vespignani (2014), <i>The parable of Google Flu: Traps in big data analysis</i>, Science. <a href="https://doi.org/10.1126/science.1248506" target="_blank" rel="noopener">מאמר</a>.</li>
-<li>Zhou et al. (2024), <i>Bias in generative AI</i>, arXiv:2403.02726. <a href="https://arxiv.org/abs/2403.02726" target="_blank" rel="noopener">מחקר</a>.</li>
-<li>Reuters Institute, <i>Digital News Report</i>. <a href="https://reutersinstitute.politics.ox.ac.uk/digital-news-report" target="_blank" rel="noopener">דוחות</a>.</li></ul><p class="small">הנתונים המספריים שבמצגת יש לקרוא יחד עם המקור, השנה וההגדרה המדויקת של כל מדד. אין להסיק מנתון בודד שכל המשתמשים או כל הפלטפורמות מתנהגים באותו אופן.</p></div></section>
-</main><footer><div class="wrap"><b>חומר הכנה לשיעור · מערכות מידע</b><p class="small">מבוסס על נושאי המצגת והמקורות המופיעים בה.</p></div></footer>
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.progress-track {
+  height: 10px;
+  background: #e8edf7;
+  border-radius: 20px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #526fc1, #8b69c9);
+  transition: width .4s;
+}
+
+nav {
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+nav a {
+  text-decoration: none;
+  background: white;
+  color: var(--blue);
+  padding: 9px 15px;
+  border-radius: 9px;
+  font-size: 14px;
+  border: 1px solid #e5eaf5;
+}
+
+nav a:hover {
+  background: var(--light);
+}
+
+section {
+  background: white;
+  padding: 28px;
+  border-radius: 17px;
+  margin: 22px 0;
+  box-shadow: 0 4px 18px #17255409;
+  scroll-margin-top: 15px;
+}
+
+.section-number {
+  color: var(--purple);
+  font-weight: bold;
+  font-size: 13px;
+}
+
+h2 {
+  color: var(--navy);
+  margin: 3px 0 15px;
+  font-size: 25px;
+}
+
+h3 {
+  color: var(--blue);
+  margin-bottom: 7px;
+}
+
+p { margin: 8px 0 14px; }
+
+.definition {
+  background: var(--light);
+  border-right: 4px solid var(--blue);
+  padding: 15px 18px;
+  border-radius: 9px;
+  margin: 18px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 14px;
+  margin: 18px 0;
+}
+
+.mini-card {
+  background: #f7f8fc;
+  padding: 17px;
+  border-radius: 12px;
+  border: 1px solid #e9edf5;
+}
+
+.mini-card h3 {
+  margin-top: 0;
+}
+
+.question {
+  background: #f7f8fc;
+  padding: 18px;
+  border-radius: 12px;
+  margin: 16px 0;
+}
+
+.question label {
+  display: block;
+  padding: 8px 10px;
+  margin: 6px 0;
+  border: 1px solid #e4e9f3;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.question label:hover {
+  background: #edf2ff;
+}
+
+.question input {
+  margin-left: 8px;
+}
+
+button {
+  background: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 9px;
+  padding: 11px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover { background: var(--navy); }
+
+.result {
+  display: none;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 8px;
+  background: #e9f6f1;
+  color: #17664f;
+}
+
+.reflection {
+  background: #f1effb;
+  border-right: 4px solid var(--purple);
+  padding: 16px;
+  border-radius: 9px;
+  margin-top: 15px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 90px;
+  padding: 12px;
+  border: 1px solid #dce2ee;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 15px;
+  resize: vertical;
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 25px;
+  font-size: 13px;
+}
+
+.completed {
+  color: var(--green);
+  font-weight: bold;
+}
+
+@media(max-width:600px) {
+  section { padding: 20px; }
+  nav { gap: 6px; }
+  nav a { font-size: 12px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>כמה אפשר לסמוך על המידע שלנו?</h1>
+  <p>
+    מידע זמין יותר מאי פעם, אבל האם קל לנו יותר לדעת מה נכון?
+    הכירו את האתגרים של צריכת מידע בעידן הדיגיטלי.
+  </p>
+</header>
+
+<div class="container">
+
+  <div class="progress-box">
+    <div class="progress-info">
+      <span>ההתקדמות שלך</span>
+      <span id="progressText">0 מתוך 5 נושאים</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+  </div>
+
+  <nav>
+    <a href="#intro">מבוא</a>
+    <a href="#overload">עומס מידע</a>
+    <a href="#echo">בועות סינון</a>
+    <a href="#fake">מידע כוזב</a>
+    <a href="#effects">השלכות</a>
+    <a href="#solutions">פתרונות</a>
+    <a href="#quiz">בדיקת הבנה</a>
+  </nav>
+
+  <section id="intro">
+    <div class="section-number">מתחילים כאן</div>
+    <h2>מבוא: האתגר של צריכת מידע</h2>
+
+    <p>
+      טכנולוגיות המידע מאפשרות לנו לקבל מידע במהירות,
+      לשתף תכנים ולהיחשף למגוון רחב של מקורות.
+      עם זאת, כמות המידע הגדולה אינה מבטיחה שהמידע מדויק,
+      אמין או מאוזן.
+    </p>
+
+    <div class="definition">
+      <strong>השאלה המרכזית:</strong>
+      כיצד צרכני מידע יכולים להבחין בין מידע אמין לבין מידע
+      מטעה או כוזב בסביבה דיגיטלית עמוסה?
+    </div>
+
+    <p>
+      כדי להבין את האתגר, נבחן את הגורמים שמקשים על הערכת
+      אמינות המידע ואת ההשלכות האפשריות שלהם.
+    </p>
+  </section>
+
+  <section id="overload">
+    <div class="section-number">נושא 1</div>
+    <h2>עומס מידע – Information Overload</h2>
+
+    <div class="definition">
+      <strong>הגדרה:</strong>
+      עומס מידע מתרחש כאשר כמות המידע המגיעה לאדם גדולה
+      מיכולתו לעבד, להעריך ולהשתמש בה באופן יעיל.
+    </div>
+
+    <h3>מדוע נוצר עומס מידע?</h3>
+
+    <div class="grid">
+      <div class="mini-card">
+        <h3>ריבוי מקורות</h3>
+        מידע מגיע מאתרי חדשות, רשתות חברתיות, מנועי חיפוש
+        ואפליקציות.
+      </div>
+
+      <div class="mini-card">
+        <h3>עדכונים מתמידים</h3>
+        מידע חדש מתפרסם ומשותף בכל רגע.
+      </div>
+
+      <div class="mini-card">
+        <h3>תוכן מהיר</h3>
+        כותרות, סרטונים קצרים והודעות מעודדים צריכה מהירה
+        ולא תמיד מעמיקה.
+      </div>
+    </div>
+
+    <h3>מהן ההשלכות?</h3>
+    <ul>
+      <li>קושי להבחין בין מידע חשוב למידע שולי.</li>
+      <li>פחות זמן לבדיקת אמינות המקורות.</li>
+      <li>עייפות קוגניטיבית וקושי בקבלת החלטות.</li>
+      <li>נטייה להסתמך על כותרות או על תגובות של אחרים.</li>
+    </ul>
+
+    <div class="reflection">
+      <strong>למחשבה:</strong>
+      האם חשיפה לכמות גדולה יותר של מידע בהכרח משפרת את
+      איכות ההחלטות שלנו? הסבירו מדוע.
+    </div>
+  </section>
+
+  <section id="echo">
+    <div class="section-number">נושא 2</div>
+    <h2>בועות סינון ותיבות תהודה</h2>
+
+    <div class="definition">
+      <strong>בועת סינון – Filter Bubble:</strong>
+      מצב שבו אלגוריתמים מתאימים את התוכן המוצג למשתמש
+      על בסיס העדפותיו, התנהגותו והפעילות הקודמת שלו.
+    </div>
+
+    <div class="definition">
+      <strong>תיבת תהודה – Echo Chamber:</strong>
+      סביבה שבה אנשים נחשפים בעיקר לדעות ולמידע המחזקים
+      את עמדותיהם הקיימות, בעוד שדעות מנוגדות מקבלות
+      פחות מקום.
+    </div>
+
+    <h3>כיצד התהליך מתרחש?</h3>
+
+    <div class="grid">
+      <div class="mini-card">
+        <h3>1. איסוף נתונים</h3>
+        המערכת לומדת על תחומי העניין ודפוסי השימוש של המשתמש.
+      </div>
+
+      <div class="mini-card">
+        <h3>2. התאמת תוכן</h3>
+        האלגוריתם מציג תכנים הדומים לאלה שהמשתמש כבר צרך.
+      </div>
+
+      <div class="mini-card">
+        <h3>3. חשיפה חוזרת</h3>
+        המשתמש נחשף שוב ושוב לנקודות מבט דומות.
+      </div>
+    </div>
+
+    <h3>מדוע זה בעייתי?</h3>
+    <ul>
+      <li>צמצום החשיפה לדעות שונות.</li>
+      <li>חיזוק אמונות קיימות גם כאשר הן אינן מבוססות.</li>
+      <li>העמקת קיטוב בין קבוצות.</li>
+      <li>תחושה מוטעית שהעמדה האישית היא העמדה המקובלת על כולם.</li>
+    </ul>
+
+    <div class="reflection">
+      <strong>למחשבה:</strong>
+      האם התאמה אישית של תוכן היא יתרון למשתמש,
+      או שהיא עלולה להגביל את החשיפה שלו למידע מגוון?
+    </div>
+  </section>
+
+  <section id="fake">
+    <div class="section-number">נושא 3</div>
+    <h2>מידע כוזב ושיטות הטעיה</h2>
+
+    <div class="definition">
+      <strong>מידע כוזב – Misinformation:</strong>
+      מידע שגוי או לא מדויק המופץ ללא כוונה מכוונת להטעות.
+      <br><br>
+      <strong>דיסאינפורמציה – Disinformation:</strong>
+      מידע שגוי המופץ במכוון במטרה להטעות או להשפיע.
+    </div>
+
+    <h3>שיטות נפוצות להטעיית צרכני מידע</h3>
+
+    <div class="grid">
+      <div class="mini-card">
+        <h3>Deepfakes</h3>
+        שימוש בבינה מלאכותית ליצירת או לשינוי תמונות,
+        סרטונים וקולות באופן שעלול להציג תוכן מזויף כאמיתי.
+      </div>
+
+      <div class="mini-card">
+        <h3>התחזות למקורות</h3>
+        יצירת אתרים או חשבונות המתחזים לגופים ולמקורות מידע
+        מוכרים ואמינים.
+      </div>
+
+      <div class="mini-card">
+        <h3>הוצאה מהקשר</h3>
+        הצגת מידע אמיתי באופן חלקי או ללא ההקשר הדרוש
+        להבנת משמעותו.
+      </div>
+
+      <div class="mini-card">
+        <h3>כותרות מטעות</h3>
+        שימוש בכותרות דרמטיות או לא מדויקות כדי למשוך תשומת לב
+        ולעודד שיתוף.
+      </div>
+    </div>
+
+    <h3>מדוע קשה לזהות מידע כוזב?</h3>
+    <ul>
+      <li>תוכן חזותי וקולי עשוי להיראות אמין ומשכנע.</li>
+      <li>לא תמיד ניתן לזהות מי עומד מאחורי הפרסום.</li>
+      <li>תוכן משותף פעמים רבות ללא בדיקת המקור.</li>
+      <li>היכרות עם מקור או מותג אינה מבטיחה שכל פרסום שלו אמין.</li>
+    </ul>
+
+    <div class="reflection">
+      <strong>למחשבה:</strong>
+      אם סרטון נראה ונשמע אמיתי, האם זו הוכחה לכך שהוא אותנטי?
+      אילו בדיקות נוספות נדרשות?
+    </div>
+  </section>
+
+  <section id="effects">
+    <div class="section-number">נושא 4</div>
+    <h2>ההשלכות של מידע כוזב</h2>
+
+    <p>
+      הקושי להבחין בין מידע אמין למידע מטעה אינו מסתכם
+      בטעות בהבנת תוכן. הוא עשוי להשפיע על יחידים,
+      על קבוצות חברתיות ועל מערכות לאומיות.
+    </p>
+
+    <div class="grid">
+      <div class="mini-card">
+        <h3>הרמה האישית</h3>
+        <ul>
+          <li>קבלת החלטות על בסיס מידע שגוי.</li>
+          <li>פגיעה באמון במקורות מידע.</li>
+          <li>בלבול וחוסר ודאות.</li>
+        </ul>
+      </div>
+
+      <div class="mini-card">
+        <h3>הרמה החברתית</h3>
+        <ul>
+          <li>העמקת קיטוב חברתי.</li>
+          <li>הגברת מתחים בין קבוצות.</li>
+          <li>פגיעה בשיח הציבורי.</li>
+        </ul>
+      </div>
+
+      <div class="mini-card">
+        <h3>הרמה הלאומית</h3>
+        <ul>
+          <li>פגיעה באמון במוסדות ציבוריים.</li>
+          <li>השפעה על תהליכים דמוקרטיים.</li>
+          <li>קושי בקיום דיון ציבורי המבוסס על עובדות.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="reflection">
+      <strong>למחשבה:</strong>
+      כיצד קושי של אדם יחיד לזהות מידע כוזב עשוי להפוך
+      לבעיה המשפיעה על החברה כולה?
+    </div>
+  </section>
+
+  <section id="solutions">
+    <div class="section-number">נושא 5</div>
+    <h2>פתרונות וחלוקת אחריות</h2>
+
+    <p>
+      התמודדות עם מידע כוזב אינה באחריותו של גורם אחד בלבד.
+      היא דורשת שיתוף פעולה בין מספר בעלי עניין.
+    </p>
+
+    <div class="grid">
+      <div class="mini-card">
+        <h3>מחוקקים וממשלות</h3>
+        <ul>
+          <li>קביעת מסגרות רגולטוריות.</li>
+          <li>הגנה על הציבור מפני מניפולציות.</li>
+          <li>שמירה על זכויות וחופש הביטוי.</li>
+        </ul>
+      </div>
+
+      <div class="mini-card">
+        <h3>פלטפורמות דיגיטליות</h3>
+        <ul>
+          <li>הפחתת הפצה של תוכן מטעה.</li>
+          <li>שיפור מנגנוני דיווח ובדיקת תוכן.</li>
+          <li>שקיפות לגבי אופן דירוג התוכן.</li>
+        </ul>
+      </div>
+
+      <div class="mini-card">
+        <h3>מפתחי מערכות</h3>
+        <ul>
+          <li>תכנון מערכות אחראיות.</li>
+          <li>צמצום הטיות אלגוריתמיות.</li>
+          <li>פיתוח כלים לזיהוי תוכן חשוד.</li>
+        </ul>
+      </div>
+
+      <div class="mini-card">
+        <h3>משתמשים ואזרחים</h3>
+        <ul>
+          <li>בדיקת מקורות מידע.</li>
+          <li>השוואה בין מקורות שונים.</li>
+          <li>חשיבה ביקורתית לפני שיתוף.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>המתח המרכזי</h3>
+    <div class="definition">
+      פתרונות למידע כוזב צריכים לאזן בין הצורך להגן על הציבור
+      לבין שמירה על חופש הביטוי, פרטיות המשתמשים והזכות
+      לקבל מידע מגוון.
+    </div>
+
+    <div class="reflection">
+      <strong>למחשבה:</strong>
+      האם נכון לתת לפלטפורמות הדיגיטליות סמכות להסיר תוכן
+      מטעה? כיצד ניתן למנוע שימוש לרעה בסמכות הזאת?
+    </div>
+  </section>
+
+  <section id="quiz">
+    <div class="section-number">האתגר המסכם</div>
+    <h2>בדיקת הבנה וחשיבה ביקורתית</h2>
+
+    <p>
+      ענו על השאלות הבאות. השאלות נועדו לבדוק את היכולת
+      ליישם ולנתח את הנושאים שנלמדו.
+    </p>
+
+    <div class="question">
+      <strong>1. כיצד עומס מידע עשוי להשפיע על היכולת לזהות מידע כוזב?</strong>
+
+      <label><input type="radio" name="q1" value="a">
+        הוא תמיד משפר את יכולת ההשוואה בין מקורות.
+      </label>
+
+      <label><input type="radio" name="q1" value="b">
+        הוא עלול לצמצם את הזמן והקשב המוקדשים לבדיקת אמינות.
+      </label>
+
+      <label><input type="radio" name="q1" value="c">
+        הוא מבטיח חשיפה למידע מאוזן.
+      </label>
+
+      <label><input type="radio" name="q1" value="d">
+        אין קשר בין עומס מידע לבין הערכת אמינות.
+      </label>
+    </div>
+
+    <div class="question">
+      <strong>2. מהו הסיכון המרכזי בבועת סינון?</strong>
+
+      <label><input type="radio" name="q2" value="a">
+        המשתמש מקבל יותר מדי מקורות בלתי קשורים.
+      </label>
+
+      <label><input type="radio" name="q2" value="b">
+        המשתמש נחשף רק לתוכן שאינו מותאם להעדפותיו.
+      </label>
+
+      <label><input type="radio" name="q2" value="c">
+        המשתמש עלול להיחשף למגוון מצומצם של נקודות מבט.
+      </label>
+
+      <label><input type="radio" name="q2" value="d">
+        האלגוריתם מפסיק להציג תוכן דיגיטלי.
+      </label>
+    </div>
+
+    <div class="question">
+      <strong>3. מדוע סרטון שנראה אמיתי אינו בהכרח ראיה אמינה?</strong>
+
+      <label><input type="radio" name="q3" value="a">
+        משום שכל סרטון ברשת הוא בהכרח מזויף.
+      </label>
+
+      <label><input type="radio" name="q3" value="b">
+        משום שניתן ליצור או לשנות תוכן חזותי באמצעות AI,
+        ויש לבדוק גם את המקור וההקשר.
+      </label>
+
+      <label><input type="radio" name="q3" value="c">
+        משום שתמונות וסרטונים אינם מכילים מידע.
+      </label>
+
+      <label><input type="radio" name="q3" value="d">
+        משום שמידע כתוב תמיד אמין יותר.
+      </label>
+    </div>
+
+    <div class="question">
+      <strong>4. מדוע האחריות להתמודדות עם מידע כוזב צריכה להתחלק בין מספר גורמים?</strong>
+
+      <label><input type="radio" name="q4" value="a">
+        משום שלכל הגורמים יש יכולת והשפעה שונה על יצירה,
+        הפצה וצריכה של מידע.
+      </label>
+
+      <label><input type="radio" name="q4" value="b">
+        משום שרק המשתמשים אחראים לכל תוכן ברשת.
+      </label>
+
+      <label><input type="radio" name="q4" value="c">
+        משום שרק ממשלות יכולות לזהות מידע שגוי.
+      </label>
+
+      <label><input type="radio" name="q4" value="d">
+        משום שפלטפורמות אינן משפיעות על הפצת מידע.
+      </label>
+    </div>
+
+    <button onclick="checkQuiz()">בדיקת תשובות</button>
+    <div class="result" id="quizResult"></div>
+
+    <div class="reflection">
+      <h3>שאלת חשיבה מסכמת</h3>
+      <p>
+        כיצד ניתן ליצור סביבה דיגיטלית שבה אנשים יכולים
+        לסמוך על המידע שהם צורכים, מבלי לפגוע בחופש הביטוי
+        ובפרטיות?
+      </p>
+      <textarea placeholder="כתבו כאן את המחשבות שלכם..."></textarea>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-number">סיימתם!</div>
+    <h2>מה חשוב לזכור?</h2>
+    <p>
+      בעידן שבו מידע מופץ במהירות ובכמויות גדולות,
+      היכולת להעריך אמינות היא מיומנות חיונית.
+      הבנת עומס המידע, בועות הסינון ושיטות ההטעיה
+      מאפשרת לנו להיות צרכני מידע ביקורתיים ואחראיים יותר.
+    </p>
+    <p class="completed">
+      ✓ השלמתם את חומר ההכנה!
+    </p>
+  </section>
+
+</div>
+
+<footer>
+  חומר הכנה לשיעור | טכנולוגיות מידע, אמינות מידע וחשיבה ביקורתית
+</footer>
+
 <script>
-function grade(){const a={q1:'a',q2:'b',q3:'c',q4:'b',q5:'a'},e=['עומס מידע הוא מצב שבו כמות המידע עולה על היכולת לעבד ולבדוק.','תא תהודה מצמצם חשיפה לדעות שאינן תואמות אמונות קיימות.','Google Flu Trends השתמש במדד עקיף — חיפושים — ולא במדידה ישירה של המחלה.','בוטים האיצו הפצה של מידע אמיתי ושקרי; התנהגות אנושית תרמה להבדלים.','כדאי למדוד גם אמינות, דיוק והוגנות.'];let s=0,miss=0,out=[];for(let i=1;i<=5;i++){let x=document.querySelector('input[name=q'+i+']:checked');if(!x){miss++;out.push('שאלה '+i+': לא נענתה. '+e[i-1]);}else if(x.value===a['q'+i]){s++;out.push('שאלה '+i+': נכון. '+e[i-1]);}else out.push('שאלה '+i+': לא מדויק. '+e[i-1]);}document.getElementById('result').innerHTML='הציון: '+s+'/5'+(miss?' · לא נענו '+miss+' שאלות':'')+'<br><br>'+out.join('<br>');}
-</script></body></html>
+const sections = [
+  "intro", "overload", "echo", "fake", "effects", "solutions"
+];
+
+const completed = new Set();
+
+function updateProgress() {
+  const count = Math.min(completed.size, 5);
+  const percent = (count / 5) * 100;
+
+  document.getElementById("progressFill").style.width =
+    percent + "%";
+
+  document.getElementById("progressText").textContent =
+    count + " מתוך 5 נושאים";
+}
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && entry.target.id !== "intro") {
+      completed.add(entry.target.id);
+      updateProgress();
+    }
+  });
+}, { threshold: 0.35 });
+
+sections.forEach(id => {
+  const element = document.getElementById(id);
+  if (element) observer.observe(element);
+});
+
+function checkQuiz() {
+  const answers = {
+    q1: "b",
+    q2: "c",
+    q3: "b",
+    q4: "a"
+  };
+
+  let score = 0;
+  let unanswered = 0;
+
+  Object.keys(answers).forEach(question => {
+    const selected = document.querySelector(
+      'input[name="' + question + '"]:checked'
+    );
+
+    if (!selected) {
+      unanswered++;
+    } else if (selected.value === answers[question]) {
+      score++;
+    }
+  });
+
+  const result = document.getElementById("quizResult");
+  result.style.display = "block";
+
+  if (unanswered > 0) {
+    result.textContent =
+      "עדיין לא עניתם על כל השאלות. השלימו את השאלות החסרות.";
+    return;
+  }
+
+  result.innerHTML =
+    "<strong>התוצאה שלכם: " + score + " מתוך 4</strong><br>" +
+    (score === 4
+      ? "מצוין! הבנתם היטב את הנושאים המרכזיים."
+      : "כדאי לחזור לנושאים שבהם התקשיתם ולנסות שוב.");
+}
+</script>
+
+</body>
+</html>
